@@ -8,10 +8,10 @@ public class MyApp : Gtk.Application {
 	
 	protected override void activate () {
 		var button_hello = new Gtk.Button.with_label ("Click Me") {
-			margin_top = 12,
-			margin_bottom = 12,
-			margin_start = 12,
-			margin_end = 12
+			margin_top = 100,
+			margin_bottom = 100,
+			margin_start = 200,
+			margin_end = 200
 		};
 		
 		button_hello.clicked.connect (() => {
@@ -21,7 +21,7 @@ public class MyApp : Gtk.Application {
 		
 		var main_window = new Gtk.ApplicationWindow (this) {
 			default_height = 300,
-			default_width = 300,
+			default_width = 750,
 			title = "Hello World"
 		};
 		main_window.child = button_hello;
